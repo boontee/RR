@@ -26,7 +26,7 @@ import org.kie.kogito.UserTask;
 import org.kie.kogito.UserTaskParam.ParamType;
 import org.kie.kogito.UserTaskParam;
 
-@UserTask(taskName = "SRO Submit RR", processName = "RiskRegisterProcess")
+@UserTask(taskName = "SROSubmitRR", processName = "RiskRegisterProcess")
 public class RiskRegisterProcess__1C18E257_48C8_4832_91D9_C1FCC57190C5_TaskOutput implements MapOutput {
 
     @Override

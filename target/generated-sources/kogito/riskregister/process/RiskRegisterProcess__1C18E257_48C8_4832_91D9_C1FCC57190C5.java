@@ -34,7 +34,7 @@ public class RiskRegisterProcess__1C18E257_48C8_4832_91D9_C1FCC57190C5 extends D
     Application application;
 
     public RiskRegisterProcess__1C18E257_48C8_4832_91D9_C1FCC57190C5() {
-        super("_1C18E257-48C8-4832-91D9-C1FCC57190C5", null);
+        super("_1C18E257-48C8-4832-91D9-C1FCC57190C5", "SROSubmitRR");
         this.setPotentialUsers("#{sroUsers}");
         this.setPotentialGroups("SRO");
         this.setAdminUsers((java.lang.String) null);

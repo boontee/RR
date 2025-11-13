@@ -34,7 +34,7 @@ public class RiskRegisterProcess__86C40E52_AF78_4A55_BD9A_1FA862FAAEA6 extends D
     Application application;
 
     public RiskRegisterProcess__86C40E52_AF78_4A55_BD9A_1FA862FAAEA6() {
-        super("_86C40E52-AF78-4A55-BD9A-1FA862FAAEA6", null);
+        super("_86C40E52-AF78-4A55-BD9A-1FA862FAAEA6", "HODApprove");
         this.setPotentialUsers("#{hodUsers}");
         this.setPotentialGroups("HOD");
         this.setAdminUsers((java.lang.String) null);

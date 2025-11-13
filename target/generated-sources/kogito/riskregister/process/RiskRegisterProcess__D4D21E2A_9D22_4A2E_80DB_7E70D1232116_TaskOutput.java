@@ -26,7 +26,7 @@ import org.kie.kogito.UserTask;
 import org.kie.kogito.UserTaskParam.ParamType;
 import org.kie.kogito.UserTaskParam;
 
-@UserTask(taskName = "HOD Verify RR", processName = "RiskRegisterProcess")
+@UserTask(taskName = "HODVerifyRR", processName = "RiskRegisterProcess")
 public class RiskRegisterProcess__D4D21E2A_9D22_4A2E_80DB_7E70D1232116_TaskOutput implements MapOutput {
 
     @Override

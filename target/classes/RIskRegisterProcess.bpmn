@@ -256,43 +256,58 @@ kcontext.setVariable( &quot;riskRegister&quot;, riskRegister );
       <incoming>_2A630041-EB7E-4471-83AC-2E51204405EE</incoming>
       <outgoing>_8E36199E-6FBF-4818-97C0-EB9D47D7EE53</outgoing>
       <outgoing>_D129D052-ED50-4D11-9F52-FA98CD18CC6B</outgoing>
-      <ioSpecification id="_E00E80DA-FC8F-40F4-B46F-69D135C44813">
-        <dataInput id="_ADA3F90B-B746-4BCD-ABBB-71B8D6394A91" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
-        <dataInput id="_08D7D9F4-0EBE-4E44-8732-8F933F0E1E23" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataInput id="_5FFB212B-353F-4A34-9D5D-EF74308540E1" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
-        <dataOutput name="riskRegister" id="_F4FDB225-C452-4FA7-9048-A36796582A52" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataOutput name="approval" id="_0638D964-8FD8-4622-B278-77EFE432A22F" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <inputSet id="_786E75A4-74FC-4506-A4A3-AF15327C0F70">
-          <dataInputRefs>_ADA3F90B-B746-4BCD-ABBB-71B8D6394A91</dataInputRefs>
-          <dataInputRefs>_08D7D9F4-0EBE-4E44-8732-8F933F0E1E23</dataInputRefs>
-          <dataInputRefs>_5FFB212B-353F-4A34-9D5D-EF74308540E1</dataInputRefs>
+      <ioSpecification id="_91EA114A-FC98-411E-A47F-7D6605F5D2DF">
+        <dataInput id="_A13D999C-277E-490F-A0F5-F8ABAEB398BA" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataInput id="_52E65051-EEA6-421E-A286-2EE7408999A9" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataInput id="_36773F97-25ED-48FE-816A-2B82E44168A6" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
+        <dataInput id="_85990841-B0A7-48BB-BF89-DD313BA9CAFD" name="approval" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <dataInput id="_698FC4AF-E5D7-40E5-8AEE-F75909955A3F" name="TaskName" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataOutput name="riskRegister" id="_31444F7A-8E34-482A-8FBE-7EEEFB23AAFA" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataOutput name="approval" id="_DAA0E8A4-E8CA-4F5B-A8F8-DC988D78E9DA" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <inputSet id="_19CC79CD-58D5-4084-94D2-62E563C6F28E">
+          <dataInputRefs>_A13D999C-277E-490F-A0F5-F8ABAEB398BA</dataInputRefs>
+          <dataInputRefs>_52E65051-EEA6-421E-A286-2EE7408999A9</dataInputRefs>
+          <dataInputRefs>_36773F97-25ED-48FE-816A-2B82E44168A6</dataInputRefs>
+          <dataInputRefs>_85990841-B0A7-48BB-BF89-DD313BA9CAFD</dataInputRefs>
+          <dataInputRefs>_698FC4AF-E5D7-40E5-8AEE-F75909955A3F</dataInputRefs>
         </inputSet>
-        <outputSet id="_E1ECC59A-834C-493F-8C9A-617A80F3B3CE">
-          <dataOutputRefs>_F4FDB225-C452-4FA7-9048-A36796582A52</dataOutputRefs>
-          <dataOutputRefs>_0638D964-8FD8-4622-B278-77EFE432A22F</dataOutputRefs>
+        <outputSet id="_CB2C27C7-B855-4566-AE84-3DA2889E633D">
+          <dataOutputRefs>_31444F7A-8E34-482A-8FBE-7EEEFB23AAFA</dataOutputRefs>
+          <dataOutputRefs>_DAA0E8A4-E8CA-4F5B-A8F8-DC988D78E9DA</dataOutputRefs>
         </outputSet>
       </ioSpecification>
-      <dataInputAssociation id="_052D2A67-3956-499A-897A-37C7B557C8AB">
-        <targetRef>_ADA3F90B-B746-4BCD-ABBB-71B8D6394A91</targetRef>
-        <assignment id="_3B2D9968-3A06-4DAD-8BBA-8E0C71ED947F">
-          <from id="_9CC69496-9224-401F-9622-951FE657225C" xsi:type="tFormalExpression">SRO</from>
-          <to id="_E92B33E2-26F3-43F4-8F09-A91292667D20">_ADA3F90B-B746-4BCD-ABBB-71B8D6394A91</to>
+      <dataInputAssociation id="_5154D4D0-3DBE-4944-A451-4C812D945224">
+        <targetRef>_A13D999C-277E-490F-A0F5-F8ABAEB398BA</targetRef>
+        <assignment id="_63B5F9DB-C6DF-4238-9C92-55117FADB312">
+          <from id="_F05E7F74-D950-4E02-802F-CB790ED15A4B" xsi:type="tFormalExpression">SRO</from>
+          <to id="_996F52F0-398F-4B01-85E5-E250631A9DF0">_A13D999C-277E-490F-A0F5-F8ABAEB398BA</to>
         </assignment>
       </dataInputAssociation>
-      <dataInputAssociation id="_521A5D51-E549-4A83-90B2-5871AFDE1940">
+      <dataInputAssociation id="_72C3BC9B-1341-4753-9E45-3F4C0AA81753">
         <sourceRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</sourceRef>
-        <targetRef>_08D7D9F4-0EBE-4E44-8732-8F933F0E1E23</targetRef>
+        <targetRef>_52E65051-EEA6-421E-A286-2EE7408999A9</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_AAA27BCD-7E87-497B-8CBC-E900A95D01B1">
+      <dataInputAssociation id="_BABD1C8F-C5E6-42A3-B765-BE24C3DA8D97">
         <sourceRef>_023FA8AB-B545-4B0C-833C-A8BAEAD733F7</sourceRef>
-        <targetRef>_5FFB212B-353F-4A34-9D5D-EF74308540E1</targetRef>
+        <targetRef>_36773F97-25ED-48FE-816A-2B82E44168A6</targetRef>
       </dataInputAssociation>
-      <dataOutputAssociation id="_299C397D-6E98-415E-8C7D-F77681C9B0D3">
-        <sourceRef>_F4FDB225-C452-4FA7-9048-A36796582A52</sourceRef>
+      <dataInputAssociation id="_5FF1DBD9-0BB1-481F-99C4-483D752E2001">
+        <sourceRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</sourceRef>
+        <targetRef>_85990841-B0A7-48BB-BF89-DD313BA9CAFD</targetRef>
+      </dataInputAssociation>
+      <dataInputAssociation id="_C9CCBE27-D84E-483F-A926-7BA633345975">
+        <targetRef>_698FC4AF-E5D7-40E5-8AEE-F75909955A3F</targetRef>
+        <assignment id="_9E6E4D02-32A8-40AF-A84A-631534EB9245">
+          <from id="_537CE0F1-7B05-400F-825B-C46175C9EE90" xsi:type="tFormalExpression">SROSubmitRR</from>
+          <to id="_D8CCCD41-A3AA-4D0D-A7D2-3CCBDC491A79">_698FC4AF-E5D7-40E5-8AEE-F75909955A3F</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_D50F4031-CC64-4810-BFBC-1854BF03AE96">
+        <sourceRef>_31444F7A-8E34-482A-8FBE-7EEEFB23AAFA</sourceRef>
         <targetRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</targetRef>
       </dataOutputAssociation>
-      <dataOutputAssociation id="_F7B1213D-9277-4CA5-B04A-141DD1100A50">
-        <sourceRef>_0638D964-8FD8-4622-B278-77EFE432A22F</sourceRef>
+      <dataOutputAssociation id="_6C33952B-FD6D-4280-95BC-F0ACA1F0E704">
+        <sourceRef>_DAA0E8A4-E8CA-4F5B-A8F8-DC988D78E9DA</sourceRef>
         <targetRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</targetRef>
       </dataOutputAssociation>
       <potentialOwner id="_D7B089C3-8BDC-4EBB-AEF7-CD0B18D3BAA7">
@@ -310,49 +325,58 @@ kcontext.setVariable( &quot;riskRegister&quot;, riskRegister );
       <incoming>_6199D120-2BA1-42FC-81F7-ADD5DB41EBD0</incoming>
       <outgoing>_700097AD-367C-43D4-9F32-C0FF29378D2E</outgoing>
       <outgoing>_D2F8F99E-BA9B-4D5A-829C-D10733E51485</outgoing>
-      <ioSpecification id="_E7AB26C7-28B9-4D8B-B8B6-EE44B9439F13">
-        <dataInput id="_801E908D-E379-4508-94F9-8BAE01EAB4A1" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
-        <dataInput id="_AD32D785-2C08-4176-A11B-FA72B11398AC" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataInput id="_C594640B-6CB7-4155-A529-E010BB64BCD3" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
-        <dataInput id="_9147A214-10DD-45DA-9122-1E8E5ACBE140" name="approval" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <dataOutput name="riskRegister" id="_732697A0-966A-42B4-AB0E-D2E13F48357E" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataOutput name="approval" id="_C2042CFA-D33B-4169-A39D-A81078875706" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <inputSet id="_EBAB93FA-B433-4172-BFF1-61467FC1965A">
-          <dataInputRefs>_801E908D-E379-4508-94F9-8BAE01EAB4A1</dataInputRefs>
-          <dataInputRefs>_AD32D785-2C08-4176-A11B-FA72B11398AC</dataInputRefs>
-          <dataInputRefs>_C594640B-6CB7-4155-A529-E010BB64BCD3</dataInputRefs>
-          <dataInputRefs>_9147A214-10DD-45DA-9122-1E8E5ACBE140</dataInputRefs>
+      <ioSpecification id="_ECB227B8-8A5E-4F13-9355-98FC7226E394">
+        <dataInput id="_2F9F69C1-004E-4228-B793-93B5F9B36EF5" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataInput id="_5DF45695-7FBA-4F78-8E8B-9EE602EDE918" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataInput id="_D6A8C1CA-C345-4221-BAF0-DC42EF654C43" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
+        <dataInput id="_BCAAC534-7EE4-4261-892E-519C839D84BA" name="approval" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <dataInput id="_C4296B39-FCE1-49B4-9084-493A89B4BFF0" name="TaskName" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataOutput name="riskRegister" id="_67853B8D-E97A-4661-BAC2-014569B7B32B" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataOutput name="approval" id="_5F1C910C-2B45-4103-BEA8-0C9AC87004AD" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <inputSet id="_4C5145F1-66A1-4B07-B164-6219710C52FB">
+          <dataInputRefs>_2F9F69C1-004E-4228-B793-93B5F9B36EF5</dataInputRefs>
+          <dataInputRefs>_5DF45695-7FBA-4F78-8E8B-9EE602EDE918</dataInputRefs>
+          <dataInputRefs>_D6A8C1CA-C345-4221-BAF0-DC42EF654C43</dataInputRefs>
+          <dataInputRefs>_BCAAC534-7EE4-4261-892E-519C839D84BA</dataInputRefs>
+          <dataInputRefs>_C4296B39-FCE1-49B4-9084-493A89B4BFF0</dataInputRefs>
         </inputSet>
-        <outputSet id="_D96A75E0-DF8E-46C4-854D-6F81749919A7">
-          <dataOutputRefs>_732697A0-966A-42B4-AB0E-D2E13F48357E</dataOutputRefs>
-          <dataOutputRefs>_C2042CFA-D33B-4169-A39D-A81078875706</dataOutputRefs>
+        <outputSet id="_4AEAFEA5-2ED9-4736-BB79-B3049EB6CC9B">
+          <dataOutputRefs>_67853B8D-E97A-4661-BAC2-014569B7B32B</dataOutputRefs>
+          <dataOutputRefs>_5F1C910C-2B45-4103-BEA8-0C9AC87004AD</dataOutputRefs>
         </outputSet>
       </ioSpecification>
-      <dataInputAssociation id="_8C93957D-9BD4-4662-A3B9-73D98BDB14B1">
-        <targetRef>_801E908D-E379-4508-94F9-8BAE01EAB4A1</targetRef>
-        <assignment id="_CA4D8BB5-EDEE-41B8-9134-E968ED4711D7">
-          <from id="_58DDF0F5-4B0B-430F-BF59-9559D973FB12" xsi:type="tFormalExpression">HOD</from>
-          <to id="_0B1AE4B7-7D9B-4987-8375-001DB725EF83">_801E908D-E379-4508-94F9-8BAE01EAB4A1</to>
+      <dataInputAssociation id="_5072E1D7-C3D5-4300-AABE-EF955EA4B95D">
+        <targetRef>_2F9F69C1-004E-4228-B793-93B5F9B36EF5</targetRef>
+        <assignment id="_97DF4E33-1350-4854-AA24-8C13C2917A2E">
+          <from id="_5C13FBB3-9282-4A54-A716-44CEA7B6152B" xsi:type="tFormalExpression">HOD</from>
+          <to id="_C54BD9DE-2837-4038-89E5-4247C7765CAF">_2F9F69C1-004E-4228-B793-93B5F9B36EF5</to>
         </assignment>
       </dataInputAssociation>
-      <dataInputAssociation id="_4084D280-30D4-4AD6-82EB-D27466263966">
+      <dataInputAssociation id="_C3A6883F-A094-4E4B-BD6A-413AC2BE35D5">
         <sourceRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</sourceRef>
-        <targetRef>_AD32D785-2C08-4176-A11B-FA72B11398AC</targetRef>
+        <targetRef>_5DF45695-7FBA-4F78-8E8B-9EE602EDE918</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_3186A858-7E86-4414-AB90-02959A2A58A3">
+      <dataInputAssociation id="_A0573D2E-20FA-4B39-8701-6F55991C0D02">
         <sourceRef>_023FA8AB-B545-4B0C-833C-A8BAEAD733F7</sourceRef>
-        <targetRef>_C594640B-6CB7-4155-A529-E010BB64BCD3</targetRef>
+        <targetRef>_D6A8C1CA-C345-4221-BAF0-DC42EF654C43</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_61193E5C-DF97-4FE5-BF11-20060DB603A8">
+      <dataInputAssociation id="_839C0CB2-8126-4D85-9A3F-1AC7ACBB95E5">
         <sourceRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</sourceRef>
-        <targetRef>_9147A214-10DD-45DA-9122-1E8E5ACBE140</targetRef>
+        <targetRef>_BCAAC534-7EE4-4261-892E-519C839D84BA</targetRef>
       </dataInputAssociation>
-      <dataOutputAssociation id="_135BC2D9-D421-42EF-A149-4B9B09B6211E">
-        <sourceRef>_732697A0-966A-42B4-AB0E-D2E13F48357E</sourceRef>
+      <dataInputAssociation id="_85097DF3-2585-4D7F-BBC2-0343866F282F">
+        <targetRef>_C4296B39-FCE1-49B4-9084-493A89B4BFF0</targetRef>
+        <assignment id="_42609C53-0ADD-4E44-A9D8-2861F113B5FD">
+          <from id="_48A3EE6E-D519-4A5F-930E-9B5C5B97FDE7" xsi:type="tFormalExpression">HODApprove</from>
+          <to id="_62F88401-154C-414F-AED3-E2E079796631">_C4296B39-FCE1-49B4-9084-493A89B4BFF0</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_1BD24CB0-14E1-4E18-BB65-B371E64F8ACD">
+        <sourceRef>_67853B8D-E97A-4661-BAC2-014569B7B32B</sourceRef>
         <targetRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</targetRef>
       </dataOutputAssociation>
-      <dataOutputAssociation id="_B9B639A0-A77F-416C-9811-31BEA43FFC01">
-        <sourceRef>_C2042CFA-D33B-4169-A39D-A81078875706</sourceRef>
+      <dataOutputAssociation id="_BF28A47B-B8C6-4F85-AFD2-85F70C242B1D">
+        <sourceRef>_5F1C910C-2B45-4103-BEA8-0C9AC87004AD</sourceRef>
         <targetRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</targetRef>
       </dataOutputAssociation>
       <potentialOwner id="_40C67FAD-575E-472D-AE6F-EB51D8C5BDCD">
@@ -366,52 +390,64 @@ kcontext.setVariable( &quot;riskRegister&quot;, riskRegister );
         <drools:onExit-script scriptFormat="">
           <drools:script>approvalLog.getApprovals().add(approval);</drools:script>
         </drools:onExit-script>
+        <drools:metaData name="elementname">
+          <drools:metaValue>RMD Verify RR</drools:metaValue>
+        </drools:metaData>
       </extensionElements>
       <incoming>_D2F8F99E-BA9B-4D5A-829C-D10733E51485</incoming>
       <outgoing>_60261F81-B054-48FB-8C6B-D0D115CF0B2C</outgoing>
-      <ioSpecification id="_0B531D37-3393-40C7-A6B9-FE64E6E9D070">
-        <dataInput id="_59D2A2B7-17D6-4988-A126-07CFB6006973" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
-        <dataInput id="_1D1253E2-A418-405C-9BC8-0C36F1EE6C99" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataInput id="_B8061D24-20D6-43DA-B045-945CF984DAAF" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
-        <dataInput id="_152FC4C4-8D7F-4D9F-8351-F44119C8B6B2" name="approval" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <dataOutput name="riskRegister" id="_E58287D6-89FA-4C18-914D-C35B161CE103" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataOutput name="approval" id="_9EA392A1-F138-4ACE-8692-89D50690EBCE" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <inputSet id="_03C01EC7-4639-40E2-A713-6C333F820CAC">
-          <dataInputRefs>_59D2A2B7-17D6-4988-A126-07CFB6006973</dataInputRefs>
-          <dataInputRefs>_1D1253E2-A418-405C-9BC8-0C36F1EE6C99</dataInputRefs>
-          <dataInputRefs>_B8061D24-20D6-43DA-B045-945CF984DAAF</dataInputRefs>
-          <dataInputRefs>_152FC4C4-8D7F-4D9F-8351-F44119C8B6B2</dataInputRefs>
+      <ioSpecification id="_8DE0EACD-4B78-424D-A314-914203E9821B">
+        <dataInput id="_97D5116F-6680-4092-BC69-CB2DA5634E8D" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataInput id="_60729E5C-3E86-490A-B519-6D21A5D1C5C9" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataInput id="_38CA8454-DB94-4FF4-ACCA-C92992B91E73" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
+        <dataInput id="_D32AE1EB-9569-4662-A0DF-A78F37F297C1" name="approval" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <dataInput id="_D97EEEB1-4918-4566-A2BF-D5961DC0D549" name="TaskName" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataOutput name="riskRegister" id="_028A2082-7527-433C-B5D4-60A0CE351F4A" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataOutput name="approval" id="_07FF13CD-C365-44C7-9EAF-E3A25DC2BCC3" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <inputSet id="_A38C052D-8FE0-41E6-BDF2-58C4883D50A6">
+          <dataInputRefs>_97D5116F-6680-4092-BC69-CB2DA5634E8D</dataInputRefs>
+          <dataInputRefs>_60729E5C-3E86-490A-B519-6D21A5D1C5C9</dataInputRefs>
+          <dataInputRefs>_38CA8454-DB94-4FF4-ACCA-C92992B91E73</dataInputRefs>
+          <dataInputRefs>_D32AE1EB-9569-4662-A0DF-A78F37F297C1</dataInputRefs>
+          <dataInputRefs>_D97EEEB1-4918-4566-A2BF-D5961DC0D549</dataInputRefs>
         </inputSet>
-        <outputSet id="_C968A845-93B4-4090-BF7B-9647CEFB5E40">
-          <dataOutputRefs>_E58287D6-89FA-4C18-914D-C35B161CE103</dataOutputRefs>
-          <dataOutputRefs>_9EA392A1-F138-4ACE-8692-89D50690EBCE</dataOutputRefs>
+        <outputSet id="_FDBFDDFB-9232-457F-877F-43F300208FB6">
+          <dataOutputRefs>_028A2082-7527-433C-B5D4-60A0CE351F4A</dataOutputRefs>
+          <dataOutputRefs>_07FF13CD-C365-44C7-9EAF-E3A25DC2BCC3</dataOutputRefs>
         </outputSet>
       </ioSpecification>
-      <dataInputAssociation id="_8ABA0089-E0F0-48C1-976C-4DD950A0508E">
-        <targetRef>_59D2A2B7-17D6-4988-A126-07CFB6006973</targetRef>
-        <assignment id="_EDC161C9-DC08-409C-8455-488B38B426CE">
-          <from id="_A78FEF87-4EBD-454C-B8D4-4AFDA7A2CE5F" xsi:type="tFormalExpression">RMD</from>
-          <to id="_C06EDFF9-2799-4952-861A-F15DC45231A8">_59D2A2B7-17D6-4988-A126-07CFB6006973</to>
+      <dataInputAssociation id="_5249559E-65CC-4CDB-8A52-5A5551CAE75D">
+        <targetRef>_97D5116F-6680-4092-BC69-CB2DA5634E8D</targetRef>
+        <assignment id="_8F847CA9-0BF0-469E-9480-3F3B475459F4">
+          <from id="_56BAB16C-4E62-47A6-B759-E8A360A68965" xsi:type="tFormalExpression">RMD</from>
+          <to id="_DD3149A9-6AB9-47BD-BF1B-176C9B70903F">_97D5116F-6680-4092-BC69-CB2DA5634E8D</to>
         </assignment>
       </dataInputAssociation>
-      <dataInputAssociation id="_1AFED0F6-4838-49A7-8A7E-707093E36E58">
+      <dataInputAssociation id="_FAE352E6-00BB-4E94-921F-5A0357EC4E46">
         <sourceRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</sourceRef>
-        <targetRef>_1D1253E2-A418-405C-9BC8-0C36F1EE6C99</targetRef>
+        <targetRef>_60729E5C-3E86-490A-B519-6D21A5D1C5C9</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_32BC267F-530F-42E3-928F-8C01E3CE03EF">
+      <dataInputAssociation id="_C4243A80-543C-4DF0-8DE8-BE04DE4A625D">
         <sourceRef>_023FA8AB-B545-4B0C-833C-A8BAEAD733F7</sourceRef>
-        <targetRef>_B8061D24-20D6-43DA-B045-945CF984DAAF</targetRef>
+        <targetRef>_38CA8454-DB94-4FF4-ACCA-C92992B91E73</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_4380C878-C816-4B89-BC5E-FBD2F031405D">
+      <dataInputAssociation id="_7A655DE1-BAEA-4B90-9988-BD01FDD6FB0F">
         <sourceRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</sourceRef>
-        <targetRef>_152FC4C4-8D7F-4D9F-8351-F44119C8B6B2</targetRef>
+        <targetRef>_D32AE1EB-9569-4662-A0DF-A78F37F297C1</targetRef>
       </dataInputAssociation>
-      <dataOutputAssociation id="_89772B34-5A7E-46FD-A0FF-277709B23914">
-        <sourceRef>_E58287D6-89FA-4C18-914D-C35B161CE103</sourceRef>
+      <dataInputAssociation id="_A21469FA-6E06-4660-B4A4-15F331BF45C7">
+        <targetRef>_D97EEEB1-4918-4566-A2BF-D5961DC0D549</targetRef>
+        <assignment id="_33E128FD-CB13-443F-91EE-F81B36622B9E">
+          <from id="_D4E92EB4-6D62-4D85-B1AF-3FBF937E1524" xsi:type="tFormalExpression">RMDVerifyRR</from>
+          <to id="_D21B1FC1-C60D-4694-B966-1663141CA243">_D97EEEB1-4918-4566-A2BF-D5961DC0D549</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_CCB03627-98E8-4BD7-8D19-017083E89688">
+        <sourceRef>_028A2082-7527-433C-B5D4-60A0CE351F4A</sourceRef>
         <targetRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</targetRef>
       </dataOutputAssociation>
-      <dataOutputAssociation id="_C0DF7E1D-F0E5-4CAC-A49D-387FF0A6AD9D">
-        <sourceRef>_9EA392A1-F138-4ACE-8692-89D50690EBCE</sourceRef>
+      <dataOutputAssociation id="_DF13BF5A-6FE4-4038-BE1E-1CD6F20621F6">
+        <sourceRef>_07FF13CD-C365-44C7-9EAF-E3A25DC2BCC3</sourceRef>
         <targetRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</targetRef>
       </dataOutputAssociation>
       <potentialOwner id="_517D7D7D-BBAB-4A3A-B2E2-7879669BC9FC">
@@ -677,43 +713,52 @@ kcontext.setVariable( &quot;riskRegister&quot;, riskRegister );
       <incoming>_D129D052-ED50-4D11-9F52-FA98CD18CC6B</incoming>
       <incoming>_850971A5-1546-4492-9AA5-395824537A44</incoming>
       <outgoing>_D3B6752D-76A8-417B-9A4E-45A70ABF5D6B</outgoing>
-      <ioSpecification id="_FFC70105-90AE-4F72-A8C4-96C9E8701E6A">
-        <dataInput id="_B1EB64BA-CC4B-43A7-BF45-CFB00E153328" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
-        <dataInput id="_46BC5DF0-8E1C-4419-AA6D-68F76CE16F8A" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataInput id="_38CBCB2F-0F62-48CD-BE30-24F4CFC635FE" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
-        <dataOutput name="riskRegister" id="_5BA85CE2-D73F-4915-9E65-202C97A3948B" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
-        <dataOutput name="approval" id="_4B1BCF1E-0137-405F-B47C-ADDF33CA5606" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
-        <inputSet id="_5A21E29B-8DA3-4D33-8ED3-7FC2F435E571">
-          <dataInputRefs>_B1EB64BA-CC4B-43A7-BF45-CFB00E153328</dataInputRefs>
-          <dataInputRefs>_46BC5DF0-8E1C-4419-AA6D-68F76CE16F8A</dataInputRefs>
-          <dataInputRefs>_38CBCB2F-0F62-48CD-BE30-24F4CFC635FE</dataInputRefs>
+      <ioSpecification id="_B3D994A4-D14E-41E3-AFB7-060BA92ACEE8">
+        <dataInput id="_AFD50332-46B9-4EEE-A9DA-3396EE5E5FED" name="GroupId" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataInput id="_F8079781-CAB1-4A41-A278-85E29F5B3FE9" name="riskRegister" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataInput id="_82D0DD1C-7198-4E3C-ACF4-8D6CB3F63DC5" name="approvalLog" drools:dtype="riskregister.model.ApprovalLog" itemSubjectRef="_F61432FD-5A02-4136-AD4D-B7123B649869" />
+        <dataInput id="_CE3A3468-09B4-48C9-97C5-41AA860C28C1" name="TaskName" drools:dtype="String" itemSubjectRef="_6465BB5A-04FD-4D1C-BDAA-0ADF8B3FB4B2" />
+        <dataOutput name="riskRegister" id="_238DE678-131D-4D6C-9707-F2F422830DB8" drools:dtype="riskregister.model.RiskRegister" itemSubjectRef="_4517EF33-52BA-4429-A6E1-BEBCA977125F" />
+        <dataOutput name="approval" id="_E653B4F6-63D1-4B59-BD48-830362014BC2" drools:dtype="riskregister.model.Approval" itemSubjectRef="_53523FEA-307E-48B1-9B92-0057F604F3EA" />
+        <inputSet id="_57015D4C-D161-4A6E-8AC7-BAFCFDFEF9A3">
+          <dataInputRefs>_AFD50332-46B9-4EEE-A9DA-3396EE5E5FED</dataInputRefs>
+          <dataInputRefs>_F8079781-CAB1-4A41-A278-85E29F5B3FE9</dataInputRefs>
+          <dataInputRefs>_82D0DD1C-7198-4E3C-ACF4-8D6CB3F63DC5</dataInputRefs>
+          <dataInputRefs>_CE3A3468-09B4-48C9-97C5-41AA860C28C1</dataInputRefs>
         </inputSet>
-        <outputSet id="_7BABD4F9-265E-4C7D-8A7C-EA571CA052AF">
-          <dataOutputRefs>_5BA85CE2-D73F-4915-9E65-202C97A3948B</dataOutputRefs>
-          <dataOutputRefs>_4B1BCF1E-0137-405F-B47C-ADDF33CA5606</dataOutputRefs>
+        <outputSet id="_1685B61E-E0D6-4004-B280-EDBD0847C6F1">
+          <dataOutputRefs>_238DE678-131D-4D6C-9707-F2F422830DB8</dataOutputRefs>
+          <dataOutputRefs>_E653B4F6-63D1-4B59-BD48-830362014BC2</dataOutputRefs>
         </outputSet>
       </ioSpecification>
-      <dataInputAssociation id="_C1B686DE-3110-4B6F-90A3-8C1E847CEAF7">
-        <targetRef>_B1EB64BA-CC4B-43A7-BF45-CFB00E153328</targetRef>
-        <assignment id="_6A875F12-1A81-47B2-83AB-F25509C8EE57">
-          <from id="_A1D1064A-5035-4ADB-AB0D-D5F85B1DFAA2" xsi:type="tFormalExpression">HOD</from>
-          <to id="_5A89152D-F3B7-4D97-B70B-0A6FC6B840C3">_B1EB64BA-CC4B-43A7-BF45-CFB00E153328</to>
+      <dataInputAssociation id="_05211E40-BEF9-4655-8DE3-84E145CDC70C">
+        <targetRef>_AFD50332-46B9-4EEE-A9DA-3396EE5E5FED</targetRef>
+        <assignment id="_A428BDB8-EB9C-43A5-8A05-5EF5453A9302">
+          <from id="_65FE347F-650F-4273-AE4C-67E0C6B69900" xsi:type="tFormalExpression">HOD</from>
+          <to id="_4DF72EF0-A9A3-4B9F-BF6E-393B535552C7">_AFD50332-46B9-4EEE-A9DA-3396EE5E5FED</to>
         </assignment>
       </dataInputAssociation>
-      <dataInputAssociation id="_36E6816F-D2F5-42E0-A500-3948D38E4612">
+      <dataInputAssociation id="_B653641A-ACBB-4D56-9E88-322566040CE9">
         <sourceRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</sourceRef>
-        <targetRef>_46BC5DF0-8E1C-4419-AA6D-68F76CE16F8A</targetRef>
+        <targetRef>_F8079781-CAB1-4A41-A278-85E29F5B3FE9</targetRef>
       </dataInputAssociation>
-      <dataInputAssociation id="_68104231-FEA1-4076-A44B-760E0A1B5F67">
+      <dataInputAssociation id="_F70B2C58-DE08-48CF-9E97-A32457FCFFFE">
         <sourceRef>_023FA8AB-B545-4B0C-833C-A8BAEAD733F7</sourceRef>
-        <targetRef>_38CBCB2F-0F62-48CD-BE30-24F4CFC635FE</targetRef>
+        <targetRef>_82D0DD1C-7198-4E3C-ACF4-8D6CB3F63DC5</targetRef>
       </dataInputAssociation>
-      <dataOutputAssociation id="_FEA47F55-6E4F-4DA6-9D8F-153C5A694379">
-        <sourceRef>_5BA85CE2-D73F-4915-9E65-202C97A3948B</sourceRef>
+      <dataInputAssociation id="_629969A5-DA6B-4C48-AEDA-9E31A7A82248">
+        <targetRef>_CE3A3468-09B4-48C9-97C5-41AA860C28C1</targetRef>
+        <assignment id="_8AC3A112-2EB4-42CF-93FF-02C1333F158F">
+          <from id="_F25EBD35-585B-4F15-B203-EF47DDEB14C1" xsi:type="tFormalExpression">HODVerifyRR</from>
+          <to id="_6629836D-4ABE-480D-88C2-C0237EE3D908">_CE3A3468-09B4-48C9-97C5-41AA860C28C1</to>
+        </assignment>
+      </dataInputAssociation>
+      <dataOutputAssociation id="_E8A5BEBE-F4CF-4537-A087-B3079831617B">
+        <sourceRef>_238DE678-131D-4D6C-9707-F2F422830DB8</sourceRef>
         <targetRef>_AE8DCE52-AC9B-48C2-A96C-7148F3EB8303</targetRef>
       </dataOutputAssociation>
-      <dataOutputAssociation id="_F2CD8CCA-CD8E-4ADA-BDEF-0317511B6026">
-        <sourceRef>_4B1BCF1E-0137-405F-B47C-ADDF33CA5606</sourceRef>
+      <dataOutputAssociation id="_9136CE40-9513-4B47-8011-3213013783A4">
+        <sourceRef>_E653B4F6-63D1-4B59-BD48-830362014BC2</sourceRef>
         <targetRef>_A6159B32-ED0E-40A1-8858-D1B7078B9F56</targetRef>
       </dataOutputAssociation>
       <potentialOwner id="_AA901297-63C0-4539-A88D-06B052F084AD">

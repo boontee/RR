@@ -34,7 +34,7 @@ public class RiskRegisterProcess__D4D21E2A_9D22_4A2E_80DB_7E70D1232116 extends D
     Application application;
 
     public RiskRegisterProcess__D4D21E2A_9D22_4A2E_80DB_7E70D1232116() {
-        super("_D4D21E2A-9D22-4A2E-80DB-7E70D1232116", null);
+        super("_D4D21E2A-9D22-4A2E-80DB-7E70D1232116", "HODVerifyRR");
         this.setPotentialUsers("#{hodUsers}");
         this.setPotentialGroups("HOD");
         this.setAdminUsers((java.lang.String) null);
